@@ -1,38 +1,408 @@
-.App {
+/* HEADER SECTION CSS */
+.outerDiv {
+  max-width: 100vw;
+  min-height: 100vh;
+}
+
+.headerSection {
+  /* height: 15vw; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.headerSection p {
+  font-size: 2.5vw;
+  /* padding: 15px; */
+  margin: 3vw;
+  font-weight: 520;
+  letter-spacing: 0.5px;
+}
+
+.headerSection button {
+  background-color: #499557;
+  color: white;
+  font-size: 1.2vw;
+  font-weight: 550;
+  border: 1px solid green;
+  border-radius: 100px;
+  padding: 0.8vw 7vw;
+  cursor: pointer;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.headerSection button:hover {
+  background-color: #376f41;
+  transition: 1s;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #252525;
+  height: 4vw;
+  font-size: 1.5vw;
+  font-weight: 550;
+  font-family: 'Open Sans', sans-serif;
+  box-shadow: 2px 0.5px 2px black;
+}
+
+/* ADVATAGE SECTION CSS */
+
+.advantageOuterDiv {
+  margin-top: 5vw;
+  background-image: url(./assets/bg.jpg);
+  background-size: cover;
+  width: 100%;
+}
+
+.advantageInner {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.leftSection {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.leftSection img {
+  width: 42vw;
+  margin-left: 5vw;
+}
+
+.rightSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+.rightItem {
+  padding: 0.5vw;
+  margin: 0.5vw;
+  width: 70%;
+  text-overflow: clip;
+  text-align: left;
+  cursor: pointer;
+}
+
+.itemHeading {
+  color: #499557;
+  font-size: 1.4vw;
+  margin: 6px 0px;
+  font-weight: bold;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.itemDescription {
+  font-size: 1.3vw;
+  color: #505050;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.selectedItem {
+  color: #252525;
+  /* font-weight: 550; */
+}
+
+.progressBar {
+  /* height: 4px; */
+  height: 0.3vw;
+  background-color: rgb(222, 225, 227);
+  /* margin: 4px 0px; */
+  margin-top: 1vw;
+}
+
+.progress {
+  /* height: 4px; */
+  height: 0.3vw;
+  background-color: #499557;
+}
+
+/* PREMIUM SECTION CSS */
+
+.premiumOuterDiv {
+  margin-top: 4vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.premiumHeading {
+  font-size: 2.5vw;
+  padding: 8px;
+  margin: 90px;
+  font-weight: 520;
+  letter-spacing: 0.5px;
+}
+
+.premiumTable {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 200px;
+  margin-bottom: 20px;
+}
+
+.freeSection,
+.premSection {
+  width: 30vw;
+  border-radius:35px;
+  box-shadow: 0.5px 26px 44px 11px grey
+
+}
+
+
+.freeHead {
+  background-color: #499557;
+  border-top-left-radius: 2vw;
+  border-top-right-radius: 2vw;
+  text-align: center;
+  font-size: 1.2vw;
+  font-weight: bold;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  padding: 10px;
+  letter-spacing: 1px;
+  height: 3vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.premHead {
+  background-color: rgb(243, 172, 42);
+  border-top-left-radius: 2vw;
+  border-top-right-radius: 2vw;
+  text-align: center;
+  font-size: 1.2vw;
+  font-weight: bold;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  padding: 10px;
+  letter-spacing: 1px;
+  height: 3vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btnDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 8vw;
+  padding: 0vw;
+  box-shadow: 0px 0px 2px rgb(199, 198, 198);
+}
+
+.btnDiv button {
+  background-color: #499557;
+  color: white;
+  font-size: 1.2vw;
+  border: none;
+  border-radius: 200px;
+  padding: 1vw 6vw;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.btnDiv button:hover {
+  background-color: #376f41;
+  transition: 1s;
+}
+
+.btnDivPrem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0vw;
+  height: 8vw;
+  box-shadow: 0px 0px 2px rgb(199, 198, 198);
+}
+
+.btnDivPrem button {
+  background-color: rgb(243, 172, 42);
+  color: white;
+  font-size: 1.2vw;
+  border: none;
+  border-radius: 200px;
+  padding: 1vw 6vw;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.btnDivPrem button:hover {
+  background-color: rgb(192, 137, 34);
+  transition: 1s;
+}
+
+
+.paraItems {
+  font-size: 1.5vw;
+  padding: 3vw 2vw;
+  box-shadow: 0px 0px 1px rgb(199, 198, 198);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+  max-height: 4vw;
+  color: #252525;
+}
+
+.paraItems span {
+  float: right;
+  color: gray;
+  cursor: pointer;
+  margin-left: 0.5vw;
+  font-size: 1.8vw;
+}
+
+.paraItems span:hover {
+  color: lightgray;
+}
+
+.lastItem {
+  background-color: lightgray;
+  padding: 2vw;
+  font-size: 1.5vw;
+  border-bottom-left-radius: 2vw;
+  border-bottom-right-radius: 2vw;
+  text-align: center;
+  letter-spacing: 0px;
+  text-shadow: 0px 0px 0.8px black;
+}
+
+.someText {
+  font-size: 1.5vw;
+  /* width: 50%; */
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/* DETAILS SECTION CSS */
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.detailOuterDiv {
+  margin-top: 6vw;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
+}
+
+.detailOuterDiv p {
+  margin: 10px;
+  text-align: center;
+}
+
+.roundProgress {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+}
+
+.roundItem {
+  margin: 10px;
+  padding: 10px;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  width: 50%;
 }
 
-.App-link {
-  color: #61dafb;
+.circleDiv1 {
+  font-size: 1.5vw;
+  border-radius: 50%;
+  height: 12vw;
+  width: 12vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: conic-gradient(#499557 270deg, lightgray 0deg);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.percent1 {
+  height: 11vw;
+  width: 11vw;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 50%;
+  color: #499557;
+  font-weight: 600;
+}
+
+.circleDiv2 {
+  font-size: 1.5vw;
+  border-radius: 50%;
+  height: 12vw;
+  width: 12vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: conic-gradient(#499557 360deg, lightgray 0deg);
+}
+
+.percent2 {
+  height: 11vw;
+  width: 11vw;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 50%;
+  color: #499557;
+  font-weight: 600;
+}
+
+.circleDiv3 {
+  font-size: 1.5vw;
+  border-radius: 50%;
+  height: 12vw;
+  width: 12vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: conic-gradient(#499557 306deg, lightgray 0deg);
+}
+
+.percent3 {
+  height: 11vw;
+  width: 11vw;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 50%;
+  color: #499557;
+  font-weight: 600;
+}
+
+.bigValue {
+  font-size: 3.5vw;
+}
+
+.smallValue {
+  font-size: 1.2vw;
 }
